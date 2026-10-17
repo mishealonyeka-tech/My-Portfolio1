@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Request a quote from Misheal Onyedikachi Ugwuoke." />
+  <title>Misheal — Get a Quote</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="contact-page">
+  <div class="shell">
+    <div class="orb one"></div>
+    <div class="orb two"></div>
+
+    <nav aria-label="Primary navigation">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Misheal</a>
+      <a class="nav-link" href="mailto:mishealonyedika@gmail.com">mishealonyedika@gmail.com</a>
+    </nav>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div class="eyebrow">Available for select projects</div>
+        <h1 id="page-title">Let’s build<br>something<br>memorable.</h1>
+        <p>I design brands, digital experiences, and visual systems that turn ideas into clear, compelling work.</p>
+        <div class="contact-detail">
+          <div>
+            <small>Email</small>
+            <a href="mailto:mishealonyedika@gmail.com">mishealonyedika@gmail.com</a>
+          </div>
+          <div>
+            <small>Based in</small>
+            <span>Abuja, Nigeria - available for remote work </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-card" aria-labelledby="form-title">
+        <h2 id="form-title">Tell me about it.</h2>
+        <p>Share a few details and I’ll get back to you with a quote.</p>
+
+        <form id="quote-form" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" autocomplete="name" placeholder="Jane Smith" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required />
+          </div>
+
+          <div class="field full">
+            <label for="company">Company / brand <em>(optional)</em></label>
+            <input id="company" name="company" autocomplete="organization" placeholder="Your business name" />
+          </div>
+
+          <div class="field">
+            <label for="service">I need help with</label>
+            <select id="service" name="service" required>
+              <option value="" selected disabled>Select a service</option>
+              <option>Brand identity</option>
+              <option>Marketing design</option>
+              <option>Website / UI design</option>
+              <option>Social media design</option>
+              <option>Something else</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="budget">Budget range</label>
+            <select id="budget" name="budget" required>
+              <option value="" selected disabled>Select a range</option>
+              <option>Under ₦100,000</option>
+              <option>₦100k – ₦300k</option>
+              <option>₦300k – ₦700k</option>
+              <option>₦700k+</option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <label for="details">Project details</label>
+            <textarea id="details" name="details" placeholder="Tell me about your goals, timeline, and what you need." required></textarea>
+          </div>
+
+          <button class="send" type="submit"><span>Send enquiry</span><span aria-hidden="true">↗</span></button>
+        </form>
+
+        <p class="message" id="form-message" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer><span>© 2026 Misheal Onyedikachi Ugwuoke</span><span>Creative Designer · Brand Designer · UI/UX</span></footer>
+  </div>
+
+  
+  <script src="js/main.js" defer></script>
+</body>
+</html>
