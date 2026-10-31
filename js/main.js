@@ -74,7 +74,7 @@ if (filterButtons.length && projects.length && projectCount) {
         project.classList.toggle('hidden', !show);
         if (show) visible += 1;
       });
-      projectCount.textContent = category === 'all' ? '06' : String(visible).padStart(2, '0');
+      projectCount.textContent = String(visible).padStart(2, '0');
     });
   });
 }
